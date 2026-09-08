@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package omega;
+
+option csharp_namespace = "OmegaSolider.Messages";
+
+message OmegaSolider {
+    string soldier_id = 1;
+    string codename = 2;
+    int32 rank_level = 3;
+    int32 bravery_points = 4;
+    string favorite_snack = 5;
+}
+
+message FireflyExpert {
+    string soldier_id = 1;
+    string codename = 2;
+    int32 rank_level = 3;
+    int32 glow_intensity = 4;
+    string expertise = 5;
+    string comedic_buff = 6;
+    string secret_mission = 7;
+    int64 processed_at_unix_ms = 8;
+}
