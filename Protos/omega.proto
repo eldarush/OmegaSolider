@@ -6,19 +6,38 @@ option csharp_namespace = "OmegaSolider.Messages";
 
 message OmegaSolider {
     string soldier_id = 1;
-    string codename = 2;
-    int32 rank_level = 3;
-    int32 bravery_points = 4;
-    string favorite_snack = 5;
+    string name = 2;
+    string rank = 3;
+    int32 age = 4;
+    string favorite_food = 5;
+    string favorite_tv_show = 6;
+    float shoe_size = 7;
+    float height = 8;
+    float weight = 9;
+    int32 lucky_number = 10;
+    string hobby = 11;
+    string origin_planet = 12;
 }
 
 message FireflyExpert {
     string soldier_id = 1;
-    string codename = 2;
-    int32 rank_level = 3;
-    int32 glow_intensity = 4;
-    string expertise = 5;
-    string comedic_buff = 6;
-    string secret_mission = 7;
-    int64 processed_at_unix_ms = 8;
+    string name = 2;
+    string rank = 3;
+    int32 age = 4;
+    string favorite_food = 5;
+    string favorite_tv_show = 6;
+    float shoe_size = 7;
+    float height = 8;
+    float weight = 9;
+    int32 lucky_number = 10;
+    string hobby = 11;
+    string origin_planet = 12;
+    string favorite_technology = 13;
+    string favorite_team = 14;
+    string favorite_commander = 15;
+    string favorite_woman = 16;
+    string favorite_coding_language = 17;
+    int32 glow_intensity = 18;
+    string comedic_buff = 19;
+    int64 processed_at_unix_ms = 20;
 }
