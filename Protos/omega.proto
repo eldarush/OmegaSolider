@@ -4,6 +4,8 @@ package omega;
 
 option csharp_namespace = "OmegaSolider.Messages";
 
+// Published v1.1.0 wire contract: never renumber or reuse field tags.
+// Fields 1..12 are copied unchanged to FireflyExpert by Mamtzetza.
 message OmegaSolider {
     string soldier_id = 1;
     string name = 2;
@@ -14,7 +16,7 @@ message OmegaSolider {
     float shoe_size = 7;
     float height = 8;
     float weight = 9;
-    int32 lucky_number = 10;
+    int32 lucky_number = 10; // Full signed int32 domain, including -2147483648.
     string hobby = 11;
     string origin_planet = 12;
 }
@@ -39,5 +41,5 @@ message FireflyExpert {
     string favorite_coding_language = 17;
     int32 glow_intensity = 18;
     string comedic_buff = 19;
-    int64 processed_at_unix_ms = 20;
+    int64 processed_at_unix_ms = 20; // UTC Unix epoch milliseconds at transformation.
 }
